@@ -33,7 +33,10 @@
         </div>
         @endif
 
-        <h1 class="checkout-heading stylish-heading m-5 d-flex align-items-center flex-column bd-highlight m-5"><img src="{{url('/storage/boostforu-logo-transparent.png' )}}" > Checkout</h1>
+        <h1 class="checkout-heading stylish-heading m-5 d-flex align-items-center flex-column bd-highlight m-5">
+            <!-- <img src="{{url('/storage/logo.png' )}}" > -->
+            Checkout
+        </h1>
         <div class="checkout-section row m-5">
             <div class="col-md-6">
                 <form action="{{ route('checkout.store') }}" method="POST" id="payment-form">
@@ -110,9 +113,7 @@
                 <h2 class="mx-5">Your Order</h2>
                 <div class="card-body d-flex align-items-center flex-column bd-highlight mb-3">
                     <h2 class="card-title text-center">Product</h2>
-                    <img
-                    src="{{url('/storage/' . $product->image)}}"
-                     width="350" height="350" class="m-4" style="object-fit: contain" >
+                    <img src="{{url('/storage/' . $product->image)}}" width="350" height="350" class="m-4" style="object-fit: contain">
                     <div class="form-label-group m-4">
                         <input type="text" name="name" value="{{$product->name}}" id="name" class="form-control common-input px-3" placeholder="Name" disabled autofocus />
                     </div>
