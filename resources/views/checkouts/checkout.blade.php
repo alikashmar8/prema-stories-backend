@@ -102,6 +102,13 @@
                         <div id="card-errors" role="alert"></div>
                     </div>
                     <div class="spacer"></div>
+                    <div class="row my-5">
+                        -$5.50 shipping per book in Australia
+                        <br>
+                        -$30 for one book international shipping
+                        <br>
+                        -for bulk orders please message for shipping quotes
+                    </div>
 
                     <button type="submit" id="complete-order" class="button-primary full-width btn btn-primary">Complete Order</button>
 
